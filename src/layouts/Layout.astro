@@ -162,7 +162,7 @@ const kickoffISOs = data.matches.map(m => getMatchUTC(m));
       <!-- Header del drawer -->
       <div class="flex items-center justify-between px-5 h-14 border-b"
            style="border-color: var(--border-subtle);">
-        <span class="font-['Outfit'] font-bold text-sm" style="color: var(--brand-nav-text, #fff);">FIFA World Cup 2026</span>
+        <span class="font-['Outfit'] font-bold text-sm" style="color: #370006;">FIFA World Cup 2026</span>
         <button id="drawer-close" class="w-8 h-8 flex items-center justify-center rounded-full"
                 style="color: var(--brand-nav-icon, #6b7280);" aria-label="Cerrar">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -257,13 +257,13 @@ const kickoffISOs = data.matches.map(m => getMatchUTC(m));
           <!-- Dirección y Cómo llegar -->
           {sponsorInfo.address && sponsorInfo.googleMaps && (
             <div class="flex flex-col items-center gap-2 mt-2 text-center px-4">
-              <a href={sponsorInfo.googleMaps} target="_blank" rel="noopener" class="flex items-center gap-2 text-sm font-semibold transition-opacity hover:opacity-80" style="color: var(--brand-nav-icon-active, #f59e0b);">
+              <a href={sponsorInfo.googleMaps} target="_blank" rel="noopener" class="flex items-center gap-2 text-sm font-semibold transition-opacity hover:opacity-80" style="color: #370006;">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                 </svg>
                 <span>Cómo llegar</span>
               </a>
-              <p class="text-xs opacity-80 leading-tight" style="color: var(--brand-nav-text, #fff);">{sponsorInfo.address}</p>
+              <p class="text-xs opacity-80 leading-tight" style="color: #370006;">{sponsorInfo.address}</p>
             </div>
           )}
         </div>
